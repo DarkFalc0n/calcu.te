@@ -6,7 +6,7 @@ Find an issue to work on from the [issues page](https://github.com/DarkFalc0n/ca
 * Clone your fork down to your local machine
 
 ```markdown
-git clone https://github.com/<YOUR_USERNAME>/calcu.te.git
+git clone https://github.com/<YOUR_USERNAME>/calcu.te
 ```
 
 * Create a new [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) (use relevant names based on your issue)
