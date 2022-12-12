@@ -7,6 +7,6 @@
 #### Visit the site here [https://darkfalc0n.github.io/calcu.te](https://darkfalc0n.github.io/calcu.te/).
 <br>
 <b>calcu.te</b> is an open-source utility website that is a one-stop solution for all types of calculators (and converters) you might need. 
-#### In case you are consdering contributing to <b>calcu.te</b>, please have a look at the [contrbution guidelines](https://github.com/DarkFalc0n/calcu.te/blob/main/CONTRIBUTING.md) first.
+In case you are considering contributing to <b>calcu.te</b>, please go through the [contribution guidelines](https://github.com/DarkFalc0n/calcu.te/blob/main/CONTRIBUTING.md/) first.
 
 
