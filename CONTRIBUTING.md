@@ -1,6 +1,6 @@
 ## Contributing to calcu.te
 
-Find an issue to work on from the [issues page](https://github.com/DarkFalc0n/calcu.te/issues)and comment under it or raise your own. Once you are assigned, proceed to work on it: 
+Find an issue to work on from the [issues page](https://github.com/DarkFalc0n/calcu.te/issues) and comment under it or raise your own. Once you are assigned, proceed to work on it: 
 
 * Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
 * Clone your fork down to your local machine
