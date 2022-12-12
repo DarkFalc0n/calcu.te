@@ -4,6 +4,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* NAVBAR STYLES */
@@ -59,4 +63,10 @@
 /* FOOTER STYLES */
 .footer-wrapper {
     background-color: #343a40;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 4rem;
 }
+
+/* =====  */
