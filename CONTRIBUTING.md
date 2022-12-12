@@ -9,7 +9,7 @@ Find an issue to work on from the [issues page](https://github.com/DarkFalc0n/ca
 git clone https://github.com/your-username/hacktoberfest.git
 ```
 
-* Create a new branch (use relevant names based on your issue
+* Create a new branch (use relevant names based on your issue)
 
 ```markdown
 git checkout -b branch-name
