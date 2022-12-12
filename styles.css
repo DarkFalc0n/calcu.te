@@ -1,14 +1,20 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /* NAVBAR STYLES */
 .navbar-wrapper {
@@ -43,19 +49,63 @@ body {
     justify-content: flex-end;
 }
 
-.nav-links a {
+.nav-links button {
+    outline: none;
+    border: none;
     margin-left: 1rem;
     background-color: #495057;
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1rem 0 1rem;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.nav-links a:hover {
+.nav-links button:hover {
     background-color: #dee2e6;
     color: #000;
+}
+
+/* ===== */
+
+/* CONTENT STYLES */
+.content-wrapper {
+    width: 100%;
+    height: calc(100vh - 11rem);
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption {
+    font-weight: 800;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.content-links {
+    display: flex;
+    justify-content: center;
+}
+
+.tool {
+    margin-top: 4rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tool:first-child {
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* ===== */
@@ -63,10 +113,10 @@ body {
 /* FOOTER STYLES */
 .footer-wrapper {
     background-color: #343a40;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
-    min-height: 4rem;
+    height: 6rem;
 }
 
 /* =====  */
