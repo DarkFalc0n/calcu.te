@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* NAVBAR STYLES */
+.navbar-wrapper {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #343a40;
+    color: #fff;
+    height: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 2rem;
+    width: 50%;
+    font-weight: 500;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    margin-left: 1rem;
+    background-color: #495057;
+    padding: 0 1.5rem 0 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-links a:hover {
+    background-color: #dee2e6;
+    color: #000;
+}
+
+/* ===== */
+
+/* FOOTER STYLES */
+.footer-wrapper {
+    background-color: #343a40;
+}
