@@ -1,4 +1,134 @@
 * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100 vw;
+    background-image: linear-gradient(rgb(50, 247, 227), rgb(127, 233, 222), rgb(255, 246, 191), rgb(255, 235, 173));
+}
+
+.navbar-wrapper {
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px;
+    /* background-color: rgb(0, 255, 229); */
+}
+
+.navbar-section {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 5vh;
+    
+}
+
+.logo p{
+    font-size: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+    border: 2px dashed aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hor-line{
+    visibility: hidden;
+}
+
+.nav-links{
+    margin: 5vh;
+}
+
+.nav-links button{
+    height: 5vh;
+    width: 11vh;
+    font-family: 'Lora', serif;
+    font-size: 3vh; 
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 235, 173);
+}
+
+.nav-links button:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(0, 251, 255);
+    border-radius: 10px;
+    width: 60%;
+    height: 50%;
+    margin: 7vh 15vw 7vh 20vw ;
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap-text{
+    font-size: 7vh;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 247, 0);
+    margin: 10vh;
+}
+
+.content-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2vh auto 5vh auto;
+}
+
+.content-links p{
+    margin: 2vw;
+    font-size: 4vh;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(0, 255, 55);
+    border-right: 2px solid gray;
+    height: 5vh;
+    padding: 2vh;
+    position: relative;
+    overflow: hidden;
+    animation-name: widthAnimator;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.content-links p:hover{
+    background-color: rgb(255, 247, 0);
+    cursor: pointer;
+}
+
+@keyframes widthAnimator {
+    from{
+        margin-left:2vw;
+    }
+    to{
+        margin-left: -2vw;
+    }
+}
+
+
+
+
+
+/*Your old CSS Code*/
+
+
+/* * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -16,7 +146,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* NAVBAR STYLES */
 .navbar-wrapper {
     max-width: 100%;
     position: relative;
@@ -66,9 +195,6 @@ body {
     color: #000;
 }
 
-/* ===== */
-
-/* CONTENT STYLES */
 .content-wrapper {
     width: 100%;
     height: calc(100vh - 11rem);
@@ -108,15 +234,10 @@ body {
     padding-left: 0;
 }
 
-/* ===== */
-
-/* FOOTER STYLES */
 .footer-wrapper {
     background-color: #343a40;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 6rem;
-}
-
-/* =====  */
+} */
