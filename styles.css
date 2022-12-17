@@ -1,243 +1,83 @@
+/* Code to add custom fonts from the web */
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100 vw;
-    background-image: linear-gradient(rgb(50, 247, 227), rgb(127, 233, 222), rgb(255, 246, 191), rgb(255, 235, 173));
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
-.navbar-wrapper {
-    border: none;
-    /* border-radius: 5px; */
-    padding: 10px;
-    /* background-color: rgb(0, 255, 229); */
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar-section {
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.logo {
-    margin: 5vh;
-    
+#logo {
+  display: inline;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 15px;
 }
 
-.logo p{
-    font-size: 6vh;
-    font-family: 'Josefin Sans', sans-serif;
-    color: aliceblue;
-    border: 2px dashed aliceblue;
-    border-radius: 10px;
-    cursor: pointer;
+#project-repo {
+  color: black;
+  text-decoration: none;
+  display: flex;
 }
 
-.hor-line{
-    visibility: hidden;
+i {
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-right: 25px;
+  cursor: pointer;
 }
 
-.nav-links{
-    margin: 5vh;
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
-.nav-links button{
-    height: 5vh;
-    width: 11vh;
-    font-family: 'Lora', serif;
-    font-size: 3vh; 
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(255, 235, 173);
+.content {
+  flex-direction: column;
 }
 
-.nav-links button:hover{
-    background-color: yellow;
-    cursor: pointer;
+#contentHead {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-.content-wrapper{
-    display: flex;
-    justify-content: center;
-    border: 3px solid rgb(0, 251, 255);
-    border-radius: 10px;
-    width: 60%;
-    height: 50%;
-    margin: 7vh 15vw 7vh 20vw ;
+.calculators {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-.caption{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+button {
+  border: none;
+  color: white;
+  background-color: #036dbe;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 50%;
+  padding: 10px;
+  margin: 11px;
+  border-radius: 55px;
 }
-
-.cap-text{
-    font-size: 7vh;
-    font-family: 'Secular One', sans-serif;
-    color: rgb(255, 247, 0);
-    margin: 10vh;
-}
-
-.content-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2vh auto 5vh auto;
-}
-
-.content-links p{
-    margin: 2vw;
-    font-size: 4vh;
-    font-family: 'Dancing Script', cursive;
-    color: rgb(0, 255, 55);
-    border-right: 2px solid gray;
-    height: 5vh;
-    padding: 2vh;
-    position: relative;
-    overflow: hidden;
-    animation-name: widthAnimator;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
-}
-
-.content-links p:hover{
-    background-color: rgb(255, 247, 0);
-    cursor: pointer;
-}
-
-@keyframes widthAnimator {
-    from{
-        margin-left:2vw;
-    }
-    to{
-        margin-left: -2vw;
-    }
-}
-
-
-
-
-
-/*Your old CSS Code*/
-
-
-/* * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    color: inherit;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-.navbar-wrapper {
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    background-color: #343a40;
-    color: #fff;
-    height: 3rem;
-    padding: 1rem 2rem 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.navbar-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.logo {
-    font-size: 2rem;
-    width: 50%;
-    font-weight: 500;
-}
-
-.nav-links {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.nav-links button {
-    outline: none;
-    border: none;
-    margin-left: 1rem;
-    background-color: #495057;
-    padding: 0 1rem 0 1rem;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.nav-links button:hover {
-    background-color: #dee2e6;
-    color: #000;
-}
-
-.content-wrapper {
-    width: 100%;
-    height: calc(100vh - 11rem);
-    text-align: left;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.caption {
-    font-weight: 800;
-    font-size: 4.5rem;
-    text-align: center;
-    line-height: 1.1;
-}
-
-.content-links {
-    display: flex;
-    justify-content: center;
-}
-
-.tool {
-    margin-top: 4rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    padding-left: 2rem;
-    border-left: 1px solid;
-    text-align: center;
-    cursor: pointer;
-}
-
-.tool:first-child {
-    border: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.footer-wrapper {
-    background-color: #343a40;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 6rem;
-} */
