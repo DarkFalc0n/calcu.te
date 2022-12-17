@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Feet to Meters Length Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>Feet to Meters:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="FtM(this.value)" onchange="FtM(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+
+<p>Metres to Feet:</p>
+
+<p>
+  <label>Metres</label>
+  <input id="inputMetres" type="number" placeholder="Metres" oninput="MtF(this.value)" onchange="MtF(this.value)">
+</p>
+<p>Feet: <span id="outputFeet"></span></p>
+
+<p>Centimeters to Inches:</p>
+
+<p>
+  <label>cm</label>
+  <input id="inputcm" type="number" placeholder="cm" oninput="CtI(this.value)" onchange="CtI(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+
+<p>Inches to Centimeters:</p>
+
+<p>
+  <label>Inches</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="ItC(this.value)" onchange="ItC(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+
+<h3>
+  Formulae Used<br>
+</h3>
+
+<p>
+  m=ft/3.2808<br>
+  ft=m*3.2808<br>
+  in=cm*0.39370<br>
+  cm=in/0.39370
+</p>
+
+<script>
+function MtF(valNum) {
+  document.getElementById("outputFeet").innerHTML=valNum*3.2808;
+}
+
+function FtM(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+}
+
+function CtI(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*0.39370;
+}
+
+function ItC(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.39370;
+}
+</script>
+</body>
+</html>
