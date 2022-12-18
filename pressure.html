@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Pressure converter</title>
+    <style>
+        body{
+            margin-top:70px;
+            background:black;
+            
+        }
+        .c{
+          margin-top: 140px;
+          background-color: beige;
+          
+        }
+        h1{
+            
+            font-size:50px;
+
+            color:greenyellow;
+            position: relative;
+            text-shadow: 0 0 4px greenyellow,
+    0 0 10px greenyellow,
+    0 0 20px greenyellow,
+    0 0 60px greenyellow,
+    0 0 80px greenyellow,
+    0 0 90px greenyellow;
+            -webkit-text-stroke:0.3vw  greenyellow;
+            text-transform: uppercase;
+        }
+        h1::before{
+            content:attr(data-text);
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            color:greenyellow;
+          
+            -webkit-text-stroke:0.3vw #383d52;
+            border-right: 1px solid greenyellow;
+overflow:hidden;
+animation:animate 8s linear infinite;
+        }
+        
+ @keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:90%;
+    }
+    
+ } 
+     
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+       
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+              
+                <h1 data-text="Pressure Converter"id="p"class="p1">Pressure Converter</h1>
+                <div class="c">
+                <form>
+            <div class="form-group">
+                <input 
+                id="atm-input"
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Enter atmospheric pressure">
+            </div>
+           </form>
+           <div id="output">
+            <div class="card  mb-2">
+                <div class="card-block">
+                <h4>Pascal:</h4>
+                <div id="paoutput"></div>
+
+            </div>
+           </div>
+           
+            <div class="card  mb-2">
+                <div class="card-block">
+                <h4>Kilopascal:</h4>
+                <div id="kpaoutput"></div>
+
+            </div>
+           </div>
+           
+            <div class="card  mb-2">
+                <div class="card-block">
+                <h4>Bar:</h4>
+                <div id="boutput"></div>
+                </div>
+            </div>
+            <div class="card  mb-2">
+                <div class="card-block">
+                <h4>torr:</h4>
+                <div id="toutput"></div>
+                </div>
+            </div>
+            <div class="card  mb-2">
+                <div class="card-block">
+                <h4>psi:</h4>
+                <div id="psioutput"></div>
+                </div>
+            </div>
+           </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+document.getElementById('output').style.visibility='hidden';
+document.getElementById('atm-input').addEventListener('input',function(e){
+    document.getElementById('output').style.visibility='visible';
+    let atm=e.target.value;
+
+
+document.getElementById('paoutput').innerHTML=atm*101325;
+document.getElementById('kpaoutput').innerHTML=atm*101.325;
+document.getElementById('boutput').innerHTML=atm*1.01325;
+document.getElementById('toutput').innerHTML=atm*760;
+document.getElementById('psioutput').innerHTML=atm*14.6959;
+});
+
+    </script>
+</body>
+</html>
