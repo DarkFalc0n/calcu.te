@@ -1,0 +1,48 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#inputCm{
+    font-size: 1.7rem;
+    position: absolute;
+    left:25%;
+    top:25%;
+}
+#inputCmInp{
+    background: transparent;
+    position: absolute;
+    left:55%;
+    top:25%;
+    font-size: 1.7rem;
+    border:none;
+    border-bottom: 2px solid black;
+}
+#outputIn{
+    font-size: 1.7rem;
+    position: absolute;
+    left:25%;
+    top:40%;
+}
+#outputInText{
+    background: transparent;
+    position: absolute;
+    left:55%;
+    top:40%;
+    font-size: 1.7rem;
+    border:none;
+    outline:none;
+    resize:none;
+}
+#copy{
+    position:absolute;
+    top:60%;
+    width:10%;
+    left:55%;
+}
+#goBack{
+    position:absolute;
+    top:60%;
+    width:10%;
+    left:35%;
+}
