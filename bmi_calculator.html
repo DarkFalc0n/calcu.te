@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCU.TE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            font-size: 16px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="button"] {
+            border: none;
+            color: white;
+            background-color: #036dbe;
+            font-weight: bold;
+            font-size: 1.25rem;
+            width: 30%;
+            padding: 10px;
+            margin: 11px;
+            border-radius: 55px;
+        }
+
+        button[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        #feedback {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <p id="logo">CALCU.TE</p>
+    </nav>
+    <h1>BMI Calculator</h1>
+    <form>
+        <label for="weight">Weight (kg):</label><br>
+        <input type="text" id="weight" name="weight"><br>
+        <label for="height">Height (cm):</label><br>
+        <input type="text" id="height" name="height"><br><br>
+        <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+    </form>
+    <br>
+    <p>Your BMI is: <span id="bmi"></span></p>
+    <p id="feedback"></p>
+
+    <script>
+        function calculateBMI() {
+            // Get input values
+            var weight = document.getElementById("weight").value;
+            var height = document.getElementById("height").value;
+
+            // Calculate BMI
+            var bmi = weight / (height / 100 * height / 100);
+
+            // Display result
+            document.getElementById("bmi").innerHTML = bmi;
+
+            // Provide feedback to user
+            if (bmi < 18.5) {
+                document.getElementById("feedback").innerHTML = "You are underweight.";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                document.getElementById("feedback").innerHTML = "Your weight is normal.";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                document.getElementById("feedback").innerHTML = "You are overweight.";
+            } else {
+                document.getElementById("feedback").innerHTML = "You are obese.";
+            }
+        }
+    </script>
+</body>
+
+</html>
