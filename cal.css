@@ -1,0 +1,19 @@
+
+.calculator {
+    display: grid;
+    place-items: center;
+    /* place-content: center; */
+    /* text-align: center; */
+    /* padding-left: 23em; */
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 13em;
+}
+
+input{
+    width: 90px;
+}
+.display-box{
+    width: 100%;
+}
